@@ -3,11 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
+using WCF_Service.Core.DataAccess.EntityFramework;
 
 namespace WCF_Service.Service.Access
 {
-    public class ServiceRepository<Rep, Entity, DTO> : IServiceRepository<DTO> where DTO : class, new()
+    public class ServiceRepository<Rep, Entity, DTO> : IServiceRepository<DTO> 
+        where DTO : class, new()
+        where Entity:class,new()
+        where Rep: EfEntityRepositoryBase<Entity>
     {
+        private Rep _repository;
+
+        public Rep Repository
+        {
+            get {
+                _repository = _repository ?? Activator.CreateInstance<Rep>();
+                return _repository;
+                }
+            set { _repository = value; }
+        }
+
         public bool Add(DTO entity)
         {
             throw new NotImplementedException();

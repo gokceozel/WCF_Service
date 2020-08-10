@@ -79,6 +79,20 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WCF_Service.Core\WCF_Service.Core.csproj">
+      <Project>{12763c7d-3a92-4bf2-b172-f2c7a68526aa}</Project>
+      <Name>WCF_Service.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCF_Service.Dto\WCF_Service.Dto.csproj">
+      <Project>{ed41dbb0-d4cd-4129-9933-fb1e8b6d0006}</Project>
+      <Name>WCF_Service.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCF_Service.Nrhwind\WCF_Service.Nrhwind.csproj">
+      <Project>{a621d2c8-b9dc-4c1d-b151-676c098d8b50}</Project>
+      <Name>WCF_Service.Nrhwind</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

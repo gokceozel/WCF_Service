@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Service.Dto", "..\WCF_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Service.Service", "..\WCF_Service.Service\WCF_Service.Service.csproj", "{530B926E-E313-4007-BDCE-04C906E9DA13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Service.Extensions", "..\WCF_Service.Extensions\WCF_Service.Extensions.csproj", "{4C08DD40-E455-4C2A-ABA7-4E096DCCFC39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{530B926E-E313-4007-BDCE-04C906E9DA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{530B926E-E313-4007-BDCE-04C906E9DA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{530B926E-E313-4007-BDCE-04C906E9DA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C08DD40-E455-4C2A-ABA7-4E096DCCFC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C08DD40-E455-4C2A-ABA7-4E096DCCFC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C08DD40-E455-4C2A-ABA7-4E096DCCFC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C08DD40-E455-4C2A-ABA7-4E096DCCFC39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
