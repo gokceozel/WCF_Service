@@ -17,8 +17,7 @@ namespace WCF_Service.Service.Access
         public Rep Repository
         {
             get {
-                _repository = _repository ?? Activator.CreateInstance<Rep>();
-                return _repository;
+                return _repository ?? Activator.CreateInstance<Rep>();
                 }
             set { _repository = value; }
         }
