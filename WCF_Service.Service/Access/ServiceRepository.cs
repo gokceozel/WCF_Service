@@ -24,6 +24,7 @@ namespace WCF_Service.Service.Access
 
         public bool Add(DTO entity)
         {
+           
             throw new NotImplementedException();
         }
 

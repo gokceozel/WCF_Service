@@ -88,6 +88,10 @@
       <Project>{ed41dbb0-d4cd-4129-9933-fb1e8b6d0006}</Project>
       <Name>WCF_Service.Dto</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WCF_Service.Extensions\WCF_Service.Extensions.csproj">
+      <Project>{4c08dd40-e455-4c2a-aba7-4e096dccfc39}</Project>
+      <Name>WCF_Service.Extensions</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WCF_Service.Nrhwind\WCF_Service.Nrhwind.csproj">
       <Project>{a621d2c8-b9dc-4c1d-b151-676c098d8b50}</Project>
       <Name>WCF_Service.Nrhwind</Name>
