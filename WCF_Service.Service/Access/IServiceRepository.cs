@@ -8,18 +8,21 @@ using System.Threading.Tasks;
 
 namespace WCF_Service.Service.Access
 {
-   [ServiceContract]
-   public interface IServiceRepository<DTO> where DTO:class,new()
+ 
+   public interface IServiceRepository<DTO> where DTO:class
     {
-        [OperationContract]
+  
         List<DTO> GetList(Expression<Func<DTO, bool>> filter = null);
-        [OperationContract]
+
+       
         DTO Get(Expression<Func<DTO, bool>> filter);
-        [OperationContract]
+        
         bool Add(DTO entity);
-        [OperationContract]
+
         bool Update(DTO entity);
-        [OperationContract]
+
+       
         bool Delete(DTO entity);
+
     }
 }
