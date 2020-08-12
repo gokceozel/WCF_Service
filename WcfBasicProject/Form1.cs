@@ -18,17 +18,16 @@ namespace WcfBasicProject
         public Form1()
         {
             InitializeComponent();
+            dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.Fill);
         }
 
      
         private void button1_Click(object sender, EventArgs e)
         {
-
-            //ServiceRepositoryOf_CategoryDTOClient client = new ServiceRepositoryOf_CategoryDTOClient();
-            ServiceRepositoryOf_ProductDTOClient client = new ServiceRepositoryOf_ProductDTOClient();
+            
+            ServiceRepositoryOf_CategoryDTOClient client = new ServiceRepositoryOf_CategoryDTOClient();
             dataGridView1.DataSource = client.GetList();
             client.Close();
-            MessageBox.Show("test");
         }
     }
 }

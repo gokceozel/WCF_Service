@@ -21,8 +21,8 @@ namespace WCF_Service.Extensions
             {
                 object value = pi.GetValue(source);
                 PropertyInfo hp = hedefProps.FirstOrDefault(x => x.Name == pi.Name);
-                hp.SetValue(hedef, value);
-
+                if(hp!=null)
+                  hp.SetValue(hedef, value);
             }
             return hedef;
         }
