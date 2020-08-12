@@ -127,10 +127,10 @@ namespace WcfBasicProject.UrunServiceReference {
     public interface IServiceRepositoryOf_ProductDTO {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_ProductDTO/GetList", ReplyAction="http://tempuri.org/IServiceRepositoryOf_ProductDTO/GetListResponse")]
-        WcfBasicProject.UrunServiceReference.ProductDTO[] GetList();
+        System.Collections.Generic.List<WcfBasicProject.UrunServiceReference.ProductDTO> GetList();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_ProductDTO/GetList", ReplyAction="http://tempuri.org/IServiceRepositoryOf_ProductDTO/GetListResponse")]
-        System.Threading.Tasks.Task<WcfBasicProject.UrunServiceReference.ProductDTO[]> GetListAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<WcfBasicProject.UrunServiceReference.ProductDTO>> GetListAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_ProductDTO/Get", ReplyAction="http://tempuri.org/IServiceRepositoryOf_ProductDTO/GetResponse")]
         WcfBasicProject.UrunServiceReference.ProductDTO Get();
@@ -184,11 +184,11 @@ namespace WcfBasicProject.UrunServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public WcfBasicProject.UrunServiceReference.ProductDTO[] GetList() {
+        public System.Collections.Generic.List<WcfBasicProject.UrunServiceReference.ProductDTO> GetList() {
             return base.Channel.GetList();
         }
         
-        public System.Threading.Tasks.Task<WcfBasicProject.UrunServiceReference.ProductDTO[]> GetListAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<WcfBasicProject.UrunServiceReference.ProductDTO>> GetListAsync() {
             return base.Channel.GetListAsync();
         }
         

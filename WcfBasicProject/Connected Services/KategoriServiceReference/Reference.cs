@@ -79,10 +79,10 @@ namespace WcfBasicProject.KategoriServiceReference {
     public interface IServiceRepositoryOf_CategoryDTO {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetList", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetListResponse")]
-        WcfBasicProject.KategoriServiceReference.CategoryDTO[] GetList();
+        System.Collections.Generic.List<WcfBasicProject.KategoriServiceReference.CategoryDTO> GetList();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetList", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetListResponse")]
-        System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO[]> GetListAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<WcfBasicProject.KategoriServiceReference.CategoryDTO>> GetListAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/Add", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/AddResponse")]
         bool Add(WcfBasicProject.KategoriServiceReference.CategoryDTO entity);
@@ -130,11 +130,11 @@ namespace WcfBasicProject.KategoriServiceReference {
                 base(binding, remoteAddress) {
         }
         
-        public WcfBasicProject.KategoriServiceReference.CategoryDTO[] GetList() {
+        public System.Collections.Generic.List<WcfBasicProject.KategoriServiceReference.CategoryDTO> GetList() {
             return base.Channel.GetList();
         }
         
-        public System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO[]> GetListAsync() {
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<WcfBasicProject.KategoriServiceReference.CategoryDTO>> GetListAsync() {
             return base.Channel.GetListAsync();
         }
         
