@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d3904a04-116a-457a-8464-2cfd96e93097" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b52f0602-121b-4073-bdf2-3c8212ed90c5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:58991/KategoriService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:58991/CategoryService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="KategoriService.xsd" MetadataType="Schema" ID="2cec532e-794e-4a66-b844-da1a8d697714" SourceId="1" SourceUrl="http://localhost:58991/KategoriService.svc?xsd=xsd0" />
-    <MetadataFile FileName="KategoriService1.xsd" MetadataType="Schema" ID="b26d172e-cad3-4058-89aa-71359fc6c8e8" SourceId="1" SourceUrl="http://localhost:58991/KategoriService.svc?xsd=xsd2" />
-    <MetadataFile FileName="KategoriService2.xsd" MetadataType="Schema" ID="14fde352-f072-4eff-8afe-3981aa9f86c0" SourceId="1" SourceUrl="http://localhost:58991/KategoriService.svc?xsd=xsd1" />
-    <MetadataFile FileName="KategoriService.wsdl" MetadataType="Wsdl" ID="167f155b-0aee-47b7-bb64-f8dcd9cd292f" SourceId="1" SourceUrl="http://localhost:58991/KategoriService.svc?wsdl" />
+    <MetadataFile FileName="CategoryService.xsd" MetadataType="Schema" ID="42ac3b0c-3d56-4a3e-b461-5052a02a8ffe" SourceId="1" SourceUrl="http://localhost:58991/CategoryService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CategoryService1.xsd" MetadataType="Schema" ID="ddb390ed-0a79-430e-a3b0-8fd82e78e176" SourceId="1" SourceUrl="http://localhost:58991/CategoryService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CategoryService2.xsd" MetadataType="Schema" ID="8afbd175-0d7d-4589-b54d-52b0d522d88d" SourceId="1" SourceUrl="http://localhost:58991/CategoryService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CategoryService.wsdl" MetadataType="Wsdl" ID="d25ba190-afb1-4dd8-b82b-5a94cafe4950" SourceId="1" SourceUrl="http://localhost:58991/CategoryService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

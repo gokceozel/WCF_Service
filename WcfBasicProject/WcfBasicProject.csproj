@@ -88,14 +88,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\KategoriServiceReference\KategoriService.wsdl" />
-    <None Include="Connected Services\KategoriServiceReference\KategoriService.xsd">
+    <None Include="Connected Services\KategoriServiceReference\CategoryService.wsdl" />
+    <None Include="Connected Services\KategoriServiceReference\CategoryService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\KategoriServiceReference\KategoriService1.xsd">
+    <None Include="Connected Services\KategoriServiceReference\CategoryService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\KategoriServiceReference\KategoriService2.xsd">
+    <None Include="Connected Services\KategoriServiceReference\CategoryService2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\KategoriServiceReference\WcfBasicProject.KategoriServiceReference.CategoryDTO.datasource">

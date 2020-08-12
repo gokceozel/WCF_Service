@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:58991/KategoriService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" />
+  <xs:import schemaLocation="http://localhost:58991/CategoryService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" />
   <xs:element name="GetList">
     <xs:complexType>
       <xs:sequence />
@@ -13,22 +13,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Get">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="GetResult" nillable="true" type="q2:CategoryDTO" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="Add">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q3:CategoryDTO" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q2:CategoryDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -42,7 +30,7 @@
   <xs:element name="Update">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q4:CategoryDTO" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q3:CategoryDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -56,7 +44,7 @@
   <xs:element name="Delete">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q5:CategoryDTO" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_Service.Dto.DtoModels" minOccurs="0" name="entity" nillable="true" type="q4:CategoryDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

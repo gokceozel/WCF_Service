@@ -61,6 +61,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CategoryService.svc" />
     <Content Include="KategoriService.svc" />
     <Content Include="ProductService.svc" />
     <Content Include="Web.config" />
@@ -68,6 +69,10 @@
   <ItemGroup>
     <Compile Include="Access\IServiceRepository.cs" />
     <Compile Include="Access\ServiceRepository.cs" />
+    <Compile Include="CategoryService.svc.cs">
+      <DependentUpon>CategoryService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ICategoryService.cs" />
     <Compile Include="IKategoriService.cs" />
     <Compile Include="IProductService.cs" />
     <Compile Include="KategoriService.svc.cs">

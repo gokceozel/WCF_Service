@@ -84,12 +84,6 @@ namespace WcfBasicProject.KategoriServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetList", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetListResponse")]
         System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO[]> GetListAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/Get", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetResponse")]
-        WcfBasicProject.KategoriServiceReference.CategoryDTO Get();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/Get", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/GetResponse")]
-        System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO> GetAsync();
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/Add", ReplyAction="http://tempuri.org/IServiceRepositoryOf_CategoryDTO/AddResponse")]
         bool Add(WcfBasicProject.KategoriServiceReference.CategoryDTO entity);
         
@@ -142,14 +136,6 @@ namespace WcfBasicProject.KategoriServiceReference {
         
         public System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO[]> GetListAsync() {
             return base.Channel.GetListAsync();
-        }
-        
-        public WcfBasicProject.KategoriServiceReference.CategoryDTO Get() {
-            return base.Channel.Get();
-        }
-        
-        public System.Threading.Tasks.Task<WcfBasicProject.KategoriServiceReference.CategoryDTO> GetAsync() {
-            return base.Channel.GetAsync();
         }
         
         public bool Add(WcfBasicProject.KategoriServiceReference.CategoryDTO entity) {
