@@ -17,5 +17,9 @@ namespace WCF_Service.Service
     public class ProductService : ServiceRepository<ProductManager,Product,ProductDTO>
     {
       
+
+
+
+
     }
 }
