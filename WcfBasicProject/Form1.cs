@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WCF_Service.Nrhwind;
+using WcfBasicProject.UrunServiceReference;
 
 namespace WcfBasicProject
 {
@@ -21,7 +22,9 @@ namespace WcfBasicProject
      
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
+            ServiceRepositoryOf_ProductDTOClient client = new ServiceRepositoryOf_ProductDTOClient();
+            var list = client.GetList();
         }
     }
 }

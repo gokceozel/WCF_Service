@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace WCF_Service.Core.DataAccess
 {
-    public interface IEntityRepository<T> where T:class,new()
+    public interface IEntityRepository<T> where T:class
     {
-        List<T> GetList(Expression<Func<T, bool>> filter = null);
-        T Get(Expression<Func<T, bool>> filter);
+        List<T> GetList();
+   
         bool Add(T entity);
         bool Update(T entity);
         bool Delete(T entity);

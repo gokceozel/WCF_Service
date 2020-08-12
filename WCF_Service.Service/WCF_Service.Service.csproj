@@ -61,13 +61,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="KategoriService.svc" />
     <Content Include="ProductService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Access\IServiceRepository.cs" />
     <Compile Include="Access\ServiceRepository.cs" />
+    <Compile Include="IKategoriService.cs" />
     <Compile Include="IProductService.cs" />
+    <Compile Include="KategoriService.svc.cs">
+      <DependentUpon>KategoriService.svc</DependentUpon>
+    </Compile>
     <Compile Include="ProductService.svc.cs">
       <DependentUpon>ProductService.svc</DependentUpon>
     </Compile>

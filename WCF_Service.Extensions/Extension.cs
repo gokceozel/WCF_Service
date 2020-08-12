@@ -15,10 +15,13 @@ namespace WCF_Service.Extensions
             Type kaynak = source.GetType();
 
             PropertyInfo[] kaynakProps = kaynak.GetProperties();
+            PropertyInfo[] hedefProps = typeof(T).GetProperties();
+
             foreach (var pi in kaynakProps)
             {
                 object value = pi.GetValue(source);
-                pi.SetValue(hedef, value);
+                PropertyInfo hp = hedefProps.FirstOrDefault(x => x.Name == pi.Name);
+                hp.SetValue(hedef, value);
 
             }
             return hedef;

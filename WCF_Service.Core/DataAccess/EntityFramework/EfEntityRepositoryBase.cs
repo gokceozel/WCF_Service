@@ -9,7 +9,7 @@ using WCF_Service.Nrhwind;
 
 namespace WCF_Service.Core.DataAccess.EntityFramework
 {
-    public class EfEntityRepositoryBase<T> : IEntityRepository<T> where T : class, new()
+    public class EfEntityRepositoryBase<T> : IEntityRepository<T> where T : class
     {
         
         private static NorthwindContext _context;
@@ -55,14 +55,9 @@ namespace WCF_Service.Core.DataAccess.EntityFramework
          
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public List<T> GetList()
         {
-            return Context.Set<T>().FirstOrDefault(filter);
-        }
-
-        public List<T> GetList(Expression<Func<T, bool>> filter = null)
-        {
-            return filter != null ? Context.Set<T>().Where(filter).ToList() : Context.Set<T>().ToList();
+            return Context.Set<T>().ToList();
         }
 
         public bool Update(T entity)

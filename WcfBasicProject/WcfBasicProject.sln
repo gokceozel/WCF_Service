@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfBasicProject", "WcfBasicProject.csproj", "{FE949AEF-FD33-4B1F-86AC-64E338C8C72A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{530B926E-E313-4007-BDCE-04C906E9DA13} = {530B926E-E313-4007-BDCE-04C906E9DA13}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Service.Nrhwind", "..\WCF_Service.Nrhwind\WCF_Service.Nrhwind.csproj", "{A621D2C8-B9DC-4C1D-B151-676C098D8B50}"
 EndProject
